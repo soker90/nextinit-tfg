@@ -6,7 +6,12 @@ before_install:
 - sudo apt-get -y install --allow-unauthenticated arco-archive-keyring
 - sudo apt-get -y --allow-unauthenticated install esi-tfg
 script:
+- cd examples/anteproyecto
 - make
+before_deploy:
+- git config --local user.name "Eduardo Parra"
+- git config --local user.email "eduparra90@gmail.com"
+- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
@@ -16,4 +21,4 @@ deploy:
   name: v $(date +'%d.%m.%Y %R')
   skip_cleanup: true
   on:
-    repo: soker90/nextinit-tfg
+    tags: true
