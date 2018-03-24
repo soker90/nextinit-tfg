@@ -1,0 +1,11 @@
+sudo: required
+dist: trusty
+before_install:
+- sudo bash -c 'echo "deb http://pike.esi.uclm.es/arco sid main" > /etc/apt/sources.list.d/pike.list'
+- sudo apt-get update
+- sudo apt-get -y install arco-archive-keyring
+- sudo apt-get install esi-tfg
+script:
+- cd examples/anteproyecto
+- make
+tags: true
