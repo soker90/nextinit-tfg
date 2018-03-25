@@ -13,7 +13,7 @@ before_deploy:
 - git config --local user.email "eduparra90@gmail.com"
 - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
-  provider: releases
+  provider: master
   api_key:
     secure: sEqXowXnGiMY/84qRRk6VXP7vfhcndDZR0eRZXGI8+2GdL4O+sxBTlOlxOIgRlWZcf07C6qQFbIPx/KV1hnR8R/tiBazdbKkY8PoprfpouzRNECnqVmTsxMolITH+Ksi5oazuvGt6a/cnG45QJwq3zeegvmaM6KcdwUdVoYEK1IObyWxDTE+N4Rl79XFkBSry1LkEB5LZqxapjkwNfV/KpVHyWnlcqt1eHMw/czNvBHXRts0gdM2DEqQHULC0eRj4x4QqC8KndHrW4j4b3jFi8d6OvNVJWW1MgfI08Z9eDprlokRzJp0N4p/+HDH2mXqf9Wj78gvPlVg63u92YYxj8yJInOBxKKfcvVPJ8idd0BzJ8Vvhj+6v4VgrS4VTKOYMgOR4QlHsFHf9VT1Kdmtkubvs1zcxGJrOk/XfRWZ4+lkuMaw4iCgu2m9OVqCln1H7QOHkj58nazSI1yyhV2w/H+AiFSvgblzY1UGxDXHfrb0+JX1kx84HW+0JXt/rHWTfEW48hEPsACKjc3CJi/DoqA2udvLkbZb1eQ3fWUUI+2gN5yVCBkRiD9C1kw+rImtER2uht0kRwEciECPEP56RPu4HCx7JPuU3a9XSZMkj4WSoUQ5CjCFLBM2UVL+WC6R6G4KjvP8KQuam0N0tK9p9ZNchZFemnQisBNkpMefEFI=
   file: 'examples/anteproyecto/main.pdf'
