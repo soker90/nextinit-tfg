@@ -12,6 +12,9 @@ before_deploy:
 - git config --local user.name "Eduardo Parra"
 - git config --local user.email "eduparra90@gmail.com"
 - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+- git add examples/anteproyecto/main.pdf
+- git commit -m "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+- git push
 deploy:
   provider: master
   api_key:
