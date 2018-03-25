@@ -7,8 +7,6 @@ before_install:
 - sudo apt-get -y --allow-unauthenticated install esi-tfg
 script:
 - make
-before_deploy:
-- ls
 deploy:
   provider: releases
   api_key:
