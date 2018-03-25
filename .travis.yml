@@ -12,7 +12,7 @@ deploy:
   api_key:
     secure: NS0/wREjWZ4rJYK508fI6meb+CkMi+SyJXA8WHjEz+pMzf7NqAgqIXuQmctUIqpqE0sZLKx2RAYBlFOMS5os64Ua3vAz6I3FhENrh6Xr17lQmkruFfRXPLCtqn4tXr/gk27Da2JXrGFgmGK0bBF0QSp6SQIM9AqS2X5StD610RGe6DpTvZ/2q2Va+yP/FjnCoLYg37THee4wP6UGK2Od/3NcOlsVGGVlHSgtlx7FJKxPHiv1Z7zNUIn5I50QS5UNnY6Jrs5bdh4TQnWkHe7ic99dHbuTZaBZ5ts4a7+GKm1ksAOn7u5APIXgDnXs0mwd+EW1QRFEf6wxd6q0X6jFp7U0TdSDeAfTOg+tqwFPTSLK2FTKXttz5wD4Xp/+/CgMXXmwCp6GZm98c1sE5qoy09FzCkxa696RPDeCcgmhuDrH6Po1w/2JxmK8Le3MUiwWbJVSfUhDatC7lKvwCPSXOJycTROJZm1hGrUjVshSG/5LGplT/b91Xc1V4M385oEFvt/V+K6M4xmiB+p8ca9h5NSn+viaY3VbmkjOxfthP3tLB478lZb9m1b6o10+c6KGnOfNescXS8EyrzsyxMXjoUzfC19DwxDGEN5VBF40vaDRYwh7XCdI64yhmvrv3zERax2ynysQDW03w4ot4hUJjlHwssrs0OcqEQstyMODyI8=
   file: main.pdf
-  name: v$(TRAVIS_BUILD_NUMBER)
+  name: v$(date +'%d.%m.%Y %R')
   skip_cleanup: true
   on:
     repo: soker90/nextinit-tfg
