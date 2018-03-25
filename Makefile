@@ -1,33 +1,17 @@
 #!/usr/bin/make -f
-# -*- coding:utf-8 -*-
+# -*- mode:makefile -*-
 
-DESTDIR?=~
+# Si instalas el paquete "arco-authors" (desde babel.esi.uclm.es) usa la siguiente linea:
+include arco/latex.mk
 
-LATEXSITE=$(DESTDIR)/usr/share/texmf/tex/latex/arco
-DOCDIR=$(DESTDIR)/usr/share/doc
-
-.PHONY: examples test
-
-all:
-
-
-wiki:
-	hg clone ssh://hg@bitbucket.org/arco_group/esi-tfg/wiki
-
-test:
-	atheist -f -i2  test
-
-examples:
-	$(MAKE) -C examples
-
-clean:
-	$(RM) $(shell find -name *~)
-	$(MAKE) -C examples clean
-
-
-install:
-	install -vd $(LATEXSITE)
-	install -v -m 444 tex/*.cls $(LATEXSITE)
-
-	install -vd $(DOCDIR)/esi-tfg
-	tar cvfz $(DOCDIR)/esi-tfg/examples.tgz examples
+# En otro caso usa las siguientes reglas:
+#
+# main.pdf: main.tex
+# 	pdflatex $<
+# 	bibtex main
+# 	pdflatex $<
+# 	pdflatex $<
+#
+# clean:
+# 	$(RM) main.pdf *.blg *.log *.bbl *.aux *.toc *.out
+# 	$(RM) *~
