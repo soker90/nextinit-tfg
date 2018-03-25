@@ -1,12 +1,5 @@
 sudo: required
 dist: trusty
-env:
-  global:
-    - secure: lotsofrandomnumbers
-    - GIT_NAME: Travis CI
-    - GIT_EMAIL: builds@travis-ci.org
-    - TRAVIS_REPO_SLUG: soker90/nextinit-tfg
-    - GIT_BRANCH: master
 before_install:
 - sudo bash -c 'echo "deb http://pike.esi.uclm.es/arco sid main" > /etc/apt/sources.list.d/pike.list'
 - sudo apt-get update
@@ -14,19 +7,10 @@ before_install:
 - sudo apt-get -y --allow-unauthenticated install esi-tfg
 script:
 - make
-- bash changefile.sh
-before_deploy:
-- bash deploy.sh
 deploy:
   provider: releases
   api_key:
-    secure: sEqXowXnGiMY/84qRRk6VXP7vfhcndDZR0eRZXGI8+2GdL4O+sxBTlOlxOIgRlWZcf07C6qQFbIPx/KV1hnR8R/tiBazdbKkY8PoprfpouzRNECnqVmTsxMolITH+Ksi5oazuvGt6a/cnG45QJwq3zeegvmaM6KcdwUdVoYEK1IObyWxDTE+N4Rl79XFkBSry1LkEB5LZqxapjkwNfV/KpVHyWnlcqt1eHMw/czNvBHXRts0gdM2DEqQHULC0eRj4x4QqC8KndHrW4j4b3jFi8d6OvNVJWW1MgfI08Z9eDprlokRzJp0N4p/+HDH2mXqf9Wj78gvPlVg63u92YYxj8yJInOBxKKfcvVPJ8idd0BzJ8Vvhj+6v4VgrS4VTKOYMgOR4QlHsFHf9VT1Kdmtkubvs1zcxGJrOk/XfRWZ4+lkuMaw4iCgu2m9OVqCln1H7QOHkj58nazSI1yyhV2w/H+AiFSvgblzY1UGxDXHfrb0+JX1kx84HW+0JXt/rHWTfEW48hEPsACKjc3CJi/DoqA2udvLkbZb1eQ3fWUUI+2gN5yVCBkRiD9C1kw+rImtER2uht0kRwEciECPEP56RPu4HCx7JPuU3a9XSZMkj4WSoUQ5CjCFLBM2UVL+WC6R6G4KjvP8KQuam0N0tK9p9ZNchZFemnQisBNkpMefEFI=
-  file: 
-    - "main.pdf"
-  skip_cleanup: true
+    secure: NS0/wREjWZ4rJYK508fI6meb+CkMi+SyJXA8WHjEz+pMzf7NqAgqIXuQmctUIqpqE0sZLKx2RAYBlFOMS5os64Ua3vAz6I3FhENrh6Xr17lQmkruFfRXPLCtqn4tXr/gk27Da2JXrGFgmGK0bBF0QSp6SQIM9AqS2X5StD610RGe6DpTvZ/2q2Va+yP/FjnCoLYg37THee4wP6UGK2Od/3NcOlsVGGVlHSgtlx7FJKxPHiv1Z7zNUIn5I50QS5UNnY6Jrs5bdh4TQnWkHe7ic99dHbuTZaBZ5ts4a7+GKm1ksAOn7u5APIXgDnXs0mwd+EW1QRFEf6wxd6q0X6jFp7U0TdSDeAfTOg+tqwFPTSLK2FTKXttz5wD4Xp/+/CgMXXmwCp6GZm98c1sE5qoy09FzCkxa696RPDeCcgmhuDrH6Po1w/2JxmK8Le3MUiwWbJVSfUhDatC7lKvwCPSXOJycTROJZm1hGrUjVshSG/5LGplT/b91Xc1V4M385oEFvt/V+K6M4xmiB+p8ca9h5NSn+viaY3VbmkjOxfthP3tLB478lZb9m1b6o10+c6KGnOfNescXS8EyrzsyxMXjoUzfC19DwxDGEN5VBF40vaDRYwh7XCdI64yhmvrv3zERax2ynysQDW03w4ot4hUJjlHwssrs0OcqEQstyMODyI8=
+  file: main.pdf
   on:
     repo: soker90/nextinit-tfg
-    tags: true
-    all_branches: false
-notifications:
-    email: false
