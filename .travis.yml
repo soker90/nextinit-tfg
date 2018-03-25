@@ -21,4 +21,4 @@ deploy:
   on:
     repo: soker90/nextinit-tfg
     tags: true
-    branch: master
+    branch: releases
