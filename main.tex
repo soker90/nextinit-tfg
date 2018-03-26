@@ -59,7 +59,7 @@ El capítulo de introducción podrá abordar los siguientes aspectos:
     \hline
     Tecnologías de la Información \\
     Computación \\
-    Ingeniería del Software \\ X
+    X & Ingeniería del Software \\
     Ingeniería de Computadores \\
     \hline
   \end{tabular}
@@ -75,7 +75,7 @@ El capítulo de introducción podrá abordar los siguientes aspectos:
   \label{tab:competencias}
 
   \zebrarows{1}
-  \begin{tabular}{p{0.2\linewidth}p{0.7\linewidth}}
+  \begin{tabular}{p{0.5\linewidth}p{0.4\linewidth}}
     \textbf{Competencia} & \textbf{Justificación} \\
     \hline
     Capacidad para desarrollar, mantener y evaluar servicios y sistemas software que satisfagan
@@ -115,20 +115,23 @@ El capítulo de introducción podrá abordar los siguientes aspectos:
 
 \section{OBJETIVOS}
 
-De acuerdo a la Introducción, el alumno deberá especificar cuál o cuáles son las hipótesis
-de trabajo de las que se parten, qué se pretende resolver, y en base a eso formular el
-objetivo principal del TFG.
-
-El objetivo principal deberá desglosarse en sub-objetivos parciales. Los sub-objetivos
-deberán describirse de forma breve y concisa.
-
-Como preámbulo a la formulación del objetivo parcial, el alumno deberá discutir sobre las
-limitaciones y condicionantes a tener en cuenta en el desarrollo del TFG (lenguaje de
-desarrollo, equipos, madurez de la tecnología, etc.).
-
-Del mismo modo, será recomendable incluir una lista preliminar de requisitos del sistema a
-construir.
-
+El objetivo principal de este TFG es la creación de una aplicación multiplataforma (NextInit) para móviles,
+desarrollada con tecnologías híbridas que permita con un único desarrollo funcionar en IOS y en Android,
+adaptándose de forma adecuada a cada sistema operativo. La aplicación móvil será creada desde cero, se
+integrará mediante una API REST con la aplicación web de NextInit. Se incluirá la funcionalidad disponible
+en la anterior aplicación móvil de NextInit, además, de otras funcionalidades nuevas.
+\newline
+Para alcanzar el objetivo principal de este TFG, antes se deben cumplir los siguientes subobjetivos:
+\begin{enumerate}
+  \item Aprendizaje del lenguaje de programación (javascript), del framework de desarrollo (React Native)
+  y de las librerías necesarias (redux, thunk…)
+  \item Análisis y elicitación de los requisitos
+  \item Estudio de la API de NextInit y en caso de necesitar alguna modificación para el correcto
+  funcionamiento de la aplicación móvil, solicitarla.
+  \item Configuración (integrancion continua jekings etc
+  \item diseño, implmentación pruebas
+  \item despliegue
+\end{enumerate}
 
 \section{MÉTODO Y FASES DE TRABAJO}
 
