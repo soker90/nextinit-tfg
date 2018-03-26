@@ -137,14 +137,14 @@
 \newcommand{\@advisorFirst}{}
 \newcommand{\advisorFirst}[1]{%
   \renewcommand{\@advisorFirst}{#1}}
-\newcommand{\@putAdvisorFirst}{Director: \@advisorFirst\par}
+\newcommand{\@putAdvisorFirst}{Director(Intelygenz): \@advisorFirst\par}
 
 \newcommand{\@advisorSecond}{}
 \newcommand{\advisorSecond}[1]{%
   \renewcommand{\@advisorSecond}{#1}}
 \newcommand{\@putAdvisorSecond}{
   \ifdefempty{\@advisorSecond}{}{
-  Director:\helpfootnote{Sólo en el caso de que haya un segundo director.} \@advisorSecond\par}}
+  Director(UCLM):\helpfootnote{Sólo en el caso de que haya un segundo director.} \@advisorSecond\par}}
 
 \newcommand{\@advisorDepartment}{}
 \newcommand{\advisorDepartment}[1]{\renewcommand{\@advisorDepartment}{#1}}
