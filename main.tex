@@ -142,24 +142,33 @@
     Se ha elegido esta metodología porque es adecuada para un equipo pequeño y con requisitos
     muy cambiantes.
 
-    Principios fundamentales de eXtreme Programming:
+
+    Principios fundamentales~\cite{XPAGIL} de los 12 de eXtreme Programming, que se pondrán en práctica:
     \begin{enumerate}
         \item Planificación incremental - La planificación es iterativa, el cliente elige en al comienzo de cada
         iteración que historias de usuario se van a implementar.
-        \item Testing - Los test son esenciales, es necesario cerar test unitarios y de aceptación. Los test se
-        escriben antes de desarrollar el código.
-        \item Refactorización -
+        \item Releases pequeñas - Se liberan versiones iterativas con mucha frecuencia, en máximo una o dos semanas.
+        La versión liberada debe estar preparada para implementarse en producción, es decisión de el cliente hacerlo
+        o no.
+        \item Uso de metáforas - El diseño debe de ser fácil de explicar a personas nuevas en el proyecto. Por eso,
+        se deben nombrar los objetos con nombres con los que personas sin conocimientos puedan identificarlos.
+        \item Simplicidad en el diseño -  El diseño debe ser sencilo, si hay código complejo se debe reemplazar
+        por otro sencillo. Para considerar que el código es sencillo debe ser sencillo de testear, de comprender,
+        de encontrar el código buscado y de explicar.
+        \item Testing - Los test son esenciales, es necesario crear test unitarios y de aceptación, estos últimos
+        son ideados por el cliente. Los test se escriben antes de desarrollar el código.
+        \item Refactorización de código - Se realiza durante todo el ciclo de vida del proyecto, ahorra tiempo
+        y aumenta la calidad.
+        \item Integración continua - El código debe integrarse en el repositorio cada pocas horas y siempre se debe
+        trabajar con la última versión.
+        \item 40 horas semanales - Se debe trabajar a un rito que se pueda mantener indefinidamente, sin días muertos
+        sin tareas que realizar, ni exceso de horas. Un trabajador cansado rinde menos, por lo que no se deberían
+        superar las 40 horas de trabajo a la semana.
+        \item El cliente es parte del equipo - Existe una persona representante del cliente en el equipo. Ésta persona
+        está disponible en todo momento para resolver dudas y decidir que se hace en cada momento.
+        \item Estándares de codificación - El estilo de codificación debe ser consistente para que se encuentre en
+        buen estado y otras personas sepan modificar cualquier parte del código.
     \end{enumerate}
-    - Planificación incremental
-    Testing
-    Refactorización
-    Diseño simple
-    Integración continua
-    Cliente en el equipo
-    Releases pequeñas
-    Semanas de 40 horas
-    Estándares de codificación
-    Unso de metaforas
 
     Ciclo de vida del proyecto:
     \begin{enumerate}
