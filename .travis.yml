@@ -10,7 +10,7 @@ script:
 - make
 - mv main.pdf anteproyecto.pdf
 before_deploy:
-- git tag "v0.1.$TRAVIS_BUILD_NUMBER-$(date +'%Y%m%d%H%M%S')"
+- git tag "v0.2.$($TRAVIS_BUILD_NUMBER-134)-$(date +'%Y%m%d%H%M%S')"
 deploy:
   provider: releases
   api_key:
