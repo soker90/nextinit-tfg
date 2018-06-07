@@ -26,13 +26,16 @@
 
     Las ideas se crean dentro de la plataforma como si fueran startup que necesitan dinero para empezar. Los usuarios,
     además de poder crear ideas, pueden invertir dinero virtual en ellas para aumentar el capital de la idea para que
-    esta puede llevarse a cabo.
-
+    esta puede llevarse a cabo. Cuando una idea recibe mucha inversión por parte del resto de usuarios significa que 
+    los personas de esa organización creen que es una buena idea.
+    
+    Como cada usuario tiene dinero limitado, estos no pueden invertir a todas las ideas porque si la idea no sale adelante,
+    pierden el dinero. En cambio, si la idea se lleva a cabo recuperan el dinero invertido, además de unos intereses.
 
     La forma de dar a conocer y aplicar la idea en la organización es la siguiente:
     \begin{enumerate}
         \item Un miembro de la organización crea la idea en Nextinit, aportando un capital semilla a su elección.
-        \item Se inicia la busqueda de fondos para soportar la idea, donde cada miembro de la organización puede
+        \item Se inicia la búsqueda de fondos para soportar la idea, donde cada miembro de la organización puede
         aportar el capital que desee.
         \item Si alcanza el mínimo de capital se considera la idea como soportada, pero se puede seguir invirtiendo
         capital hasta que termine el periodo de financiación.
@@ -41,9 +44,9 @@
         \item Una vez que se ha probado el piloto se implementa la idea en la organización.
     \end{enumerate}
 
-    Actualmente nextinit tiene un gran problema con las aplicaciones moviles, ha cambiado con frecuencia el equipo de
+    Actualmente Nextinit tiene un gran problema con las aplicaciones móviles, ha cambiado con frecuencia el equipo de
     desarrollo, la complejidad del código es elevada, las aplicaciones utilizan librerías de terceros que han sido
-    abandonadas, la aplicación es poco robusca y el coste de realizar cambios es elevado.
+    abandonadas, la aplicación es poco robusta y el coste de realizar cambios es elevado.
 
     Se estudió la posibilidad de desarrollar dos nuevas aplicaciones nativas, tanto para Android~\cite{NEXTAN} como
     para IOS~\cite{NEXTIP}, pero hubieran sido dos desarrollos distintos, con el consecuente aumento de coste y tiempo.
@@ -51,7 +54,6 @@
     En este proyecto se realizará un único desarrollo para crear las dos aplicaciones móviles, mejorando el
     funcionamiento respecto a las antiguas versiones y añadiendo nuevas funcionalidades de las que no dispone
     actualmente.
-
 
     \section{TECNOLOGÍA ESPECÍFICA / INTENSIFICACIÓN / ITINERARIO CURSADO POR EL ALUMNO}
 
@@ -124,18 +126,18 @@
 
     \section{OBJETIVOS}
 
-    El objetivo principal de este TFG es la creación de una aplicación multiplataforma (NextInit) para móviles,
+    El objetivo principal de este TFG es la creación de una aplicación multiplataforma (Nextinit) para móviles,
     desarrollada con tecnologías híbridas que permita con un único desarrollo funcionar en IOS y en Android,
     adaptándose de forma adecuada a cada sistema operativo. La aplicación móvil será creada desde cero, se
-    integrará mediante una API REST con la aplicación web de NextInit. Se incluirá la funcionalidad disponible
-    en la anterior aplicación móvil de NextInit, además, de otras funcionalidades nuevas.
+    integrará mediante una API REST con la aplicación web de Nextinit. Se incluirá la funcionalidad disponible
+    en la anterior aplicación móvil de Nextinit, además, de otras funcionalidades nuevas.
     \newline\newline
     Para alcanzar el objetivo principal de este TFG, antes se deben cumplir los siguientes subobjetivos:
     \begin{enumerate}
         \item Aprendizaje del lenguaje de programación (javascript), del framework de desarrollo (React Native)
         y de las librerías necesarias (redux, thunk…)
         \item Análisis y elicitación de los requisitos
-        \item Estudio de la API de NextInit y en caso de necesitar alguna modificación para el correcto
+        \item Estudio de la API de Nextinit y en caso de necesitar alguna modificación para el correcto
         funcionamiento de la aplicación móvil, solicitarla.
         \item Configuración de un entorno de integración continua
         \item Diseño, implementación y pruebas para dispositivos IOS y Android
@@ -160,7 +162,7 @@
         o no.
         \item Uso de metáforas - El diseño debe de ser fácil de explicar a personas nuevas en el proyecto. Por eso,
         se deben nombrar los objetos con nombres con los que personas sin conocimientos puedan identificarlos.
-        \item Simplicidad en el diseño - El diseño debe ser sencilo, si hay código complejo se debe reemplazar
+        \item Simplicidad en el diseño - El diseño debe ser sencillo, si hay código complejo se debe reemplazar
         por otro sencillo. Para considerar que el código es sencillo, debe ser sencillo de testear, de comprender,
         de encontrar el código buscado y de explicar.
         \item Testing - Los test son esenciales, es necesario crear test unitarios y de aceptación, estos últimos
@@ -172,7 +174,7 @@
         \item 40 horas semanales - Se debe trabajar a un rito que se pueda mantener indefinidamente, sin días muertos,
         sin tareas que realizar, ni exceso de horas. Un trabajador cansado rinde menos, por lo que no se deberían
         superar las 40 horas de trabajo a la semana.
-        \item El cliente es parte del equipo - Existe una persona representante del cliente en el equipo. Ésta persona
+        \item El cliente es parte del equipo - Existe una persona representante del cliente en el equipo. Esta persona
         está disponible en todo momento para resolver dudas y decidir que se hace en cada momento.
         \item Estándares de codificación - El estilo de codificación debe ser consistente para que se encuentre en
         buen estado y otras personas sepan modificar cualquier parte del código.
@@ -192,9 +194,9 @@
         listo para lanzarlo a producción. En el plan de elaboración se tiene en cuenta las historias de usuario
         no realizadas, los puntos de las iteraciones, y las tareas sin acabar de la iteración anterior.
         \item Producción - Esta fase requiere de pruebas extras y revisiones del sistema antes de que
-        este sea llevado a producción. En este punto, todavía pueden tomarse decisiones sobre las caractersticas
+        este sea llevado a producción. En este punto, todavía pueden tomarse decisiones sobre las características
         que incorporará la release actual.
-        \item Mantenimiento - Mientras la versión anterior está en producción, el equipo debe mantaner el sistema
+        \item Mantenimiento - Mientras la versión anterior está en producción, el equipo debe mantener el sistema
         en funcionamiento mientras desarrolla la siguiente versión.
     \end{enumerate}
 
@@ -217,7 +219,6 @@
     \begin{itemize}
         \item Android Studio~\cite{ASTUDIO}
         \item ECMAScript~\cite{ECMA}
-        \item Expo~\cite{Expo}
         \item IntelliJ IDEA Community~\cite{IDEA}
         \item React~\cite{REACT}
         \item React Native~\cite{RENA}
