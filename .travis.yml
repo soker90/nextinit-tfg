@@ -9,7 +9,6 @@ before_install:
 script:
 - make
 - mv main.pdf anteproyecto.pdf
-- cat main.log
 before_deploy:
 - git tag "v0.2.$(($TRAVIS_BUILD_NUMBER-134))-$(date +'%Y%m%d%H%M%S')"
 deploy:
