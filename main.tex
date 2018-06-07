@@ -76,7 +76,7 @@
     \end{table}
 
 
-     \clearpage
+    %  \clearpage
 
 
     \begin{table}[hp]
@@ -123,14 +123,16 @@
         \end{tabular}
     \end{table}
 
+	\clearpage
 
     \section{OBJETIVOS}
 
-    El objetivo principal de este TFG es la creación de una aplicación multiplataforma (Nextinit) para móviles,
-    desarrollada con tecnologías híbridas que permita con un único desarrollo funcionar en IOS y en Android,
-    adaptándose de forma adecuada a cada sistema operativo. La aplicación móvil será creada desde cero, se
-    integrará mediante una API REST con la aplicación web de Nextinit. Se incluirá la funcionalidad disponible
-    en la anterior aplicación móvil de Nextinit, además, de otras funcionalidades nuevas.
+    El objetivo principal de este TFG es la creación de una aplicación para móviles para utilizar la plataforma 
+    Nextinit anteriormente descrita, desarrollada con tecnologías híbridas que permita con un único 
+    desarrollo funcionar en IOS y Android, adaptándose de forma adecuada a cada sistema operativo. La 
+    aplicación móvil será creada desde cero, se integrará mediante una API REST con la aplicación web de 
+    Nextinit. Se incluirá la funcionalidad disponible en la anterior aplicación móvil de Nextinit, además, de otras 
+    funcionalidades nuevas.
     \newline\newline
     Para alcanzar el objetivo principal de este TFG, antes se deben cumplir los siguientes subobjetivos:
     \begin{enumerate}
@@ -171,7 +173,7 @@
         y aumenta la calidad.
         \item Integración continua - El código debe integrarse en el repositorio cada pocas horas y siempre se debe
         trabajar con la última versión.
-        \item 40 horas semanales - Se debe trabajar a un rito que se pueda mantener indefinidamente, sin días muertos,
+        \item 40 horas semanales - Se debe trabajar a un ritmo que se pueda mantener indefinidamente, sin días muertos,
         sin tareas que realizar, ni exceso de horas. Un trabajador cansado rinde menos, por lo que no se deberían
         superar las 40 horas de trabajo a la semana.
         \item El cliente es parte del equipo - Existe una persona representante del cliente en el equipo. Esta persona
@@ -217,18 +219,15 @@
 
     El software necesario para la realización del proyecto es el siguiente:
     \begin{itemize}
-        \item Android Studio~\cite{ASTUDIO}
-        \item ECMAScript~\cite{ECMA}
-        \item IntelliJ IDEA Community~\cite{IDEA}
-        \item React~\cite{REACT}
-        \item React Native~\cite{RENA}
-        \item Redux~\cite{REDUX}
-        \item Redux Thunk~\cite{THUNK}
-        \item Jest~\cite{JEST}
-        \item Native Base~\cite{NABA}
-        \item Standard~\cite{STAND}
-        \item Trello~\cite{TRELLO}
-        \item Xcode~\cite{XCODE}
+        \item Android Studio~\cite{ASTUDIO}, para desarrollar la parte nativa de Android de la aplicación.
+        \item ECMAScript~\cite{ECMA}, es el lenguaje en el que se realiza el desarrollo.
+        \item IntelliJ IDEA Community~\cite{IDEA}, para desarrollar la mayor parte de la aplicación.
+        \item React Native~\cite{RENA}, es el framework que se usa para realizar el desarrollo.
+        \item Redux~\cite{REDUX}, para desacoplar el estado global en React Native utilizando el patrón Flux.
+        \item Redux Thunk~\cite{THUNK}, es un middleware que se usará para disparar acciones de redux.
+        \item Jest~\cite{JEST}, se utilizará para realizar tests unitarios a la aplicación.
+        \item Native Base~\cite{NABA}, se utilizará para realizar el estilo visual de la aplicación.
+        \item Xcode~\cite{XCODE}, para desarrollar la parte nativa de IOS de la aplicación.
     \end{itemize}
 
 
