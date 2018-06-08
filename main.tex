@@ -70,7 +70,7 @@
      \singlespacing
      \singlespacing
      
-	\textit{Esquema de la arquitectura Flux con React Native y Redux utilizada en el proyecto~\cite{FLUX}}
+	\textit{Esquema de la arquitectura Flux con React Native y Redux utilizada en el proyecto~\cite{FLUXIMG}}
 	\singlespacing
 	\singlespacing
     \section{TECNOLOGÍA ESPECÍFICA / INTENSIFICACIÓN / ITINERARIO CURSADO POR EL ALUMNO}
@@ -151,16 +151,16 @@
     Nextinit. Se incluirá la funcionalidad disponible en la anterior aplicación móvil de Nextinit, además, de otras 
     funcionalidades nuevas.
     \newline\newline
-    Para alcanzar el objetivo principal de este TFG, antes se deben cumplir los siguientes subobjetivos:
+    Para conseguir la finalidad principal de este TFG, se deben cumplir los siguientes objetivos:
     \begin{enumerate}
-        \item Identificar los diferentes tipos de roles existentes en la aplicaciones y las funcionalidades 
-        de esta disponibles para cada tipo de usuario.
-        y de las librerías necesarias (redux, thunk…)
-        \item Análisis y elicitación de los requisitos
-        \item Estudio de la API de Nextinit y en caso de necesitar alguna modificación para el correcto
-        funcionamiento de la aplicación móvil, solicitarla.
-        \item Configuración de un entorno de integración continua
-        \item Diseño, implementación y pruebas para dispositivos IOS y Android
+        \item Crear un sistema para autenticarse con los credenciales de la plataforma o a través de 
+        la intranet de un cliente de Intelygenz en concreto.
+        \item Mejorar la experiencia de usuario en las aplicaciones móviles de Nextinit, creando una aplicación 
+        intuitiva y fácil de usar.
+        \item Obtener unas aplicaciones móviles más robustas que las que había anteriormente, a las que
+        poder añadir nuevas funcionalidades con mayor rapidez y facilidad.
+        \item Crear una aplicación que solo incorpore las funcionalidades que más se usaban de las aplicaciones
+        antiguas y añadir otras nuevas.
         \item Despliegue de la solución
     \end{enumerate}
 
@@ -168,7 +168,7 @@
     \section{MÉTODO Y FASES DE TRABAJO}
 
     Para el desarrollo se usará una metodología basada en eXtreme Programming~\cite{XP} adaptada para
-    adecuarla a un equipo con un solo desarrollador, por lo que no habrá Pair Programming.
+    adecuarla a un equipo con un solo desarrollador.
     Se ha elegido esta metodología porque es adecuada para un equipo pequeño y con requisitos
     muy cambiantes.
 
@@ -228,9 +228,9 @@
     Para la realización de este TFG se utilizará un ordenador, un móvil Android y un iPhone.
     El equipo necesario ha sido facilitado por Intelygenz.
     \begin{itemize}
-        \item \textbf{MacBook Pro} Procesador Intel Core i5 @2.5GHz. 8GB RAM 1600 MHz. macOS High Sierra v10.13.3
-        \item \textbf{Nexus 5x} Procesador Qualcomm® Snapdragon™ 808 64 bits, 1,8 GHz, seis núcleos, 2GB RAM con Android 8.1
-        \item \textbf{iPhone 8} Procesador Apple A10 Fusion Quad-Core 64 bits, 2,23 GHz, 2GB RAM con IOS 11
+        \item \textbf{MacBook Pro} Procesador Intel Core i5 @2.5GHz. 8GB RAM 1600 MHz. macOS High Sierra v10.13.5
+        \item \textbf{Nexus 5x} Procesador Qualcomm® Snapdragon™ 808 64 bits, 1.8 GHz, seis núcleos, 2GB RAM con Android 8.1
+        \item \textbf{iPhone 8} Procesador Apple A10 Fusion Quad-Core 64 bits, 2.23 GHz, 2GB RAM con IOS 11
     \end{itemize}
 
     \subsection{Medios Software}
@@ -245,6 +245,7 @@
         \item Redux Thunk~\cite{THUNK}, es un middleware que se usará para disparar acciones de redux.
         \item Jest~\cite{JEST}, se utilizará para realizar tests unitarios a la aplicación.
         \item Native Base~\cite{NABA}, se utilizará para realizar el estilo visual de la aplicación.
+        \item Standard~\cite{STAND}, se usará como guía de estilo del código.
         \item Xcode~\cite{XCODE}, para desarrollar la parte nativa de IOS de la aplicación.
     \end{itemize}
 
