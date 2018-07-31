@@ -1,12 +1,12 @@
 sudo: required
 dist: trusty
+services:
+  - docker
 before_install:
-- sudo bash -c 'echo "deb http://pike.esi.uclm.es/arco sid main" > /etc/apt/sources.list.d/pike.list'
-- sudo apt-get update
-- sudo apt-get -y install --allow-unauthenticated arco-archive-keyring
-- sudo apt-get -y --allow-unauthenticated install esi-tfg arco-authors
 - export TZ=Europe/Madrid
 script:
+- docker pull eduardopa/esi-tfg
+- docker run --name buildvm eduardopa/esi-tfg /bin/bash Recipe
 - make
 - export NAME=tfg_v1.0.$(($TRAVIS_BUILD_NUMBER-193))pre-$(date +'%Y%m%d%H%M%S').pdf
 - mv main.pdf $NAME
