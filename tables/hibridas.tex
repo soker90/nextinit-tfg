@@ -1,25 +1,16 @@
 
 
 
-\begin{tabular}{p{.2\textwidth}p{.2\textwidth}p{.2\textwidth}p{.2\textwidth}}
-  \tabheadformat
-  \tabhead{Tipo de fallo}   &
-  \tabhead{Sin fallos}      &
-  \tabhead{Mensaje perdido} &
-  \tabhead{Servidor caído}  \\
-\hline
-\textit{Maybe}         & Ejecuta:   1 & Ejecuta: 0/1        & Ejecuta: 0/1 \\
-                       & Resultado: 1 & Resultado: 0        & Resultado: 0 \\
-\hline
-\textit{Al-least-once} & Ejecuta:   1 & Ejecuta:   $\geq$ 1 & Ejecuta:   $\geq$ 0 \\
-                       & Resultado: 1 & Resultado: $\geq$ 1 & Resultado: $\geq$ 0 \\
-\hline
-\textit{At-most-once}  & Ejecuta:   1 & Ejecuta:   1        & Ejecuta: 0/1 \\
-                       & Resultado: 1 & Resultado: 1        & Resultado: 0 \\
-\hline
-\textit{Exactly-once}  & Ejecuta:   1 & Ejecuta:   1        & Ejecuta:   1 \\
-                       & Resultado: 1 & Resultado: 1        & Resultado: 1 \\
-\hline
+\begin{tabular}{p{.2\textwidth}p{.2\textwidth}}
+	\tabheadformat
+	\tabhead{Ventajas}   &
+	\tabhead{Inconvenientes}      
+	\hline
+	\textit{}         & Acceso Completo al dispositivo 							   & Diferentes habilidades / idiomas / herramientas para cada plataforma \\
+	& Mejor experiencia de usuario									& Tienden a ser más caras de desarrollar \\
+	& Envío de notificacioens o "avisos a los usuarios"   & El código del cliente no es reutilizable entre las diferentes plataformas \\
+	
+	\hline
 \end{tabular}
 
 
