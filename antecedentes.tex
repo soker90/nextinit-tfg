@@ -1,18 +1,37 @@
 \chapter{Antecedentes}
 \label{chap:antecedentes}
 
+En este se expondrán unos conocimientos básicos para poder comprender mejor este documento.
+
 \section{Tipos de aplicaciones móviles}
 
+Antes de ver los tipos de aplicaciones móviles que existen, es necesario conocer que es una aplicación móvil. Las aplicaciones
+móviles o simplemente apps son aplicaciones informáticas que diseñadas para ser ejecutadas en dispositivos móviles, tales 
+como smartphones y tablets.
+
+Actualmente, se pueden desarrollar aplicaciones móviles de distintas formas \cite{ANADES} como se verá a continuación, el 
+principal reto de los desarrolladores es proporcionar soluciones para todas las plataformas.  A continuación se presentarán 
+tres tipos de aplicaciones, una mediante un desarrollo por plataforma (nativa) y dos multiplataforma (híbrida y web), en 
+función de las necesidades será recomendable usar un tipo u otro.
+
 \subsection{Aplicaciones nativas}
+
+Las aplicaciones nativas se desarrollan para un \acf{SO} determinado. En cada \acs{SO} se utiliza un lenguaje y entorno 
+específico para desarrollar en esa plataforma siendo compilada para funcionar únicamente en esta, lo que, generalmente 
+permite un funcionamiento más fluido y estable que otro tipo de aplicaciones.
+
+La principal ventaja de las aplicaciones nativas es la posibilidad de acceder a todos los elementos del dispositivo móvil, tales
+como el GPS o la cámara. Por el contrario, el problema más notable es el coste de desarrollo, ya que es necesario
+un desarrollo distinto por cada \acs{SO} en el que se quiera disponer de la aplicación.
 
 \begin{table}[nativas]
 	\centering
 	{\small
 		\input{tables/nativas.tex}
 	}
-	\caption[Semánticas de \acs{RPC} en presencia de distintos fallos]
-	{Semánticas de \acs{RPC} en presencia de distintos fallos
-		(\textsc{Puder}~\cite{puder05:_distr_system_archit})}
+	\caption[Ventajas e inconvenientes de las aplicaciones móviles nativas]
+	{Ventajas e inconvenientes de las aplicaciones móviles nativas
+		(\textsc{Puder}~\cite{TIPAPP})}
 	\label{tab:nativas}
 \end{table}
 
@@ -23,9 +42,9 @@
 	{\small
 		\input{tables/web.tex}
 	}
-	\caption[Semánticas de \acs{RPC} en presencia de distintos fallos]
-	{Semánticas de \acs{RPC} en presencia de distintos fallos
-		(\textsc{Puder}~\cite{puder05:_distr_system_archit})}
+	\caption[Ventajas e inconvenientes de las aplicaciones web móviles]
+	{Ventajas e inconvenientes de las aplicaciones web móviles
+		(\textsc{Puder}~\cite{TIPAPP})}
 	\label{tab:web}
 \end{table}
 
@@ -36,7 +55,7 @@
 	{\small
 		\input{tables/hibridas.tex}
 	}
-	\caption[Semánticas de \acs{RPC} en presencia de distintos fallos]
+	\caption[Ventajas e inconvenientes de las aplicaciones móviles híbridas]
 	{Semánticas de \acs{RPC} en presencia de distintos fallos
 		(\textsc{Puder}~\cite{puder05:_distr_system_archit})}
 	\label{tab:hibridas}
