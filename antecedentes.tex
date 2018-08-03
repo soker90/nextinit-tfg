@@ -37,18 +37,18 @@ un desarrollo distinto por cada \acs{SO} en el que se quiera disponer de la apli
 \end{table}
 
 \subsection{Aplicaciones web}
-Las aplicaciones web para móviles son ejecutadas desde un navegador del dispositivo. Estas aplicaciones se desarrollan
+Las aplicaciones web para móviles son ejecutadas desde un navegador web del dispositivo. Estas aplicaciones se desarrollan
 como si fuera una web, con las mismas tecnologías. Por ese motivo, este tipo de aplicaciones no necesitan la instalación 
 de ningún componente para utilizar la aplicación, únicamente necesitan un navegador y conexión a Internet. 
 
-Además, como no se instala nada en el dispositivo, las actualizaciones son aplicadas unicamente en el servidor, con lo cual, 
+Además, como no se instala nada en el dispositivo, las actualizaciones son aplicadas únicamente en el servidor, con lo cuál, 
 los usuarios siempre usan la última actualización disponible, sin que el usuario tenga que actualizar ningún componente 
 en dicho dispositivo.
 
 La gran ventaja es la independencia del \acs{SO} a la hora de desarrollar la aplicación, con el mismo desarrollo se consigue 
-una aplicación capaz de ejecutarse en cualquiera de ellos que disponga de un navegador web y conexión a Internet. 
+una solución capaz de ejecutarse en cualquiera de ellos que disponga de un navegador web y conexión a Internet. 
 
-Pero ,como se ha comentado anteriormente estas aplicaciones dependen totalmente de una conexión a Internet para 
+Pero, como se ha comentado anteriormente estas aplicaciones dependen totalmente de una conexión a Internet para 
 funcionar, y aún teniendo conexión si esta no es estable puede ofrecer una experiencia de usuario bastante negativa. A 
 parte de la dependencia de la conexión presenta otros problemas como la imposibilidad de utilizar todos los elementos 
 del dispositivo como el \acs{GPS} o el bluetooth.
@@ -64,6 +64,16 @@ del dispositivo como el \acs{GPS} o el bluetooth.
 \end{table}
 
 \subsection{Aplicaciones híbridas}
+
+Las aplicaciones híbridas combinan parte de las características los dos tipos anteriores. Se utilizan tecnologías web 
+como puede ser Javascript o HTML, utilizando el mismo código para distintas plataformas. Pero además, pueden 
+acceder a parte de los elementos hardware del dispositivo, aunque no se tiene un control total de este como 
+ocurría en las nativas. Otra de las características es la necesidad de instalar la aplicación en los dispositivos, por 
+lo que se pueden distribuir a través de las tiendas de aplicaciones.
+
+En cambio, una de las desventajas es que al hacer un solo desarrollo, el diseño de la interfaz de usuario será igual
+en cualquiera de las plataformas pudiendo no adaptarse a los estilos de estas. Aunque, esto puede solucionarse
+habría que añadir código específico para cada \acs{SO} para que la aplicación se adapte.
 
 \begin{table}[hibridas]
 	\centering
