@@ -106,7 +106,7 @@ frameworks visuales como Ionic podemos simplificar el proceso de diseño.
 
 \begin{figure}[!h]
 	\begin{center}
-		\includegraphics[width=0.2\textwidth]{./img/cordova.pdf}
+		\includegraphics[width=0.2\textwidth]{./img/cordova.jpg}
 		\caption{Arquitectura Ionic~\cite{CORDOVAimg}}
 		\label{fig:CORDOVAimg}
 	\end{center}
@@ -114,7 +114,23 @@ frameworks visuales como Ionic podemos simplificar el proceso de diseño.
 
 \subsection{React Native}
 
+React Native es un framework desarrollado por Facebook que permite desarrollar aplicaciones para Android e IOS 
+con componentes nativos y un rendimiento casi al nivel de las nativas usando React. Con React Native no se crea 
+una aplicación híbrida clásica sino que construye aplicaciones nativas con componentes nativos de cada \acs{SO}.
 
+Algunas de las características~\cite{rnCaracteristicas} destacables de React Native son:
+\begin{itemize}
+	\item No es un WebView como Ionic sino que traduce los componentes en Javascript a componentes nativos.
+	\item Al no ser una aplicación web ni estar en HTML no se usa CSS en ella, pero hay un conjunto de propiedades
+	similares al CSS que se pueden utilizar para cambiar el diseño de los componentes.
+	\item No es necesario recompilar la aplicacación para probar cambios, cada vez que se modifica el código 
+	se puede ver en tiempo real esa modificación.
+	\item Es posible utilizar código nativo en Java, Objective-C o Swift cuando se necesite. También es posible usar 
+	Kotlin con la configuración adecuada de Gradle.
+	\item Al estar escrita en Javascript, se puede utilizar en el poyecto gran parte de los modulos disponibles a traves 
+	de gestores de paquetes como «npm».
+	\item Dispone de algunos polyfills o shims para Fetch o Sockets, entre otros.
+\end{itemize}
 
 \subsection{NativeScript}
 
