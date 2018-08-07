@@ -106,7 +106,7 @@ frameworks visuales como Ionic podemos simplificar el proceso de diseño.
 
 \begin{figure}[!h]
 	\begin{center}
-		\includegraphics[width=0.2\textwidth]{./img/cordova.jpg}
+		\includegraphics[width=0.6\textwidth]{./img/cordova.jpg}
 		\caption{Arquitectura Ionic~\cite{CORDOVAimg}}
 		\label{fig:CORDOVAimg}
 	\end{center}
@@ -116,7 +116,8 @@ frameworks visuales como Ionic podemos simplificar el proceso de diseño.
 
 React Native es un framework desarrollado por Facebook que permite desarrollar aplicaciones para Android e IOS 
 con componentes nativos y un rendimiento casi al nivel de las nativas usando React. Con React Native no se crea 
-una aplicación híbrida clásica sino que construye aplicaciones nativas con componentes nativos de cada \acs{SO}.
+una aplicación híbrida clásica sino que construye aplicaciones nativas con componentes nativos de cada \acs{SO}, 
+a esto, muchos lo consideran un nuevo tipo llamado aplicaciones \acf{JIT} en vez de híbridas.
 
 Algunas de las características~\cite{rnCaracteristicas} destacables de React Native son:
 \begin{itemize}
@@ -127,12 +128,33 @@ Algunas de las características~\cite{rnCaracteristicas} destacables de React Na
 	se puede ver en tiempo real esa modificación.
 	\item Es posible utilizar código nativo en Java, Objective-C o Swift cuando se necesite. También es posible usar 
 	Kotlin con la configuración adecuada de Gradle.
-	\item Al estar escrita en Javascript, se puede utilizar en el poyecto gran parte de los modulos disponibles a traves 
+	\item Al estar escrita en Javascript, se puede utilizar en el proyecto gran parte de los módulos disponibles a través 
 	de gestores de paquetes como «npm».
 	\item Dispone de algunos polyfills o shims para Fetch o Sockets, entre otros.
 \end{itemize}
 
 \subsection{NativeScript}
+
+NativeScript~\cite{NATSCR} al igual que React Native es un framework que permite con el mismo código base desarrollar aplicaciones 
+Android e IOS, las interfaces de usuario se renderizan con componentes nativos de la plataforma, obteniendo unos 
+resultados muy parecidos a las aplicaciones nativas.
+
+Una de las características de NativeScript que lo diferencian de React Native es el lenguaje de desarrollo, ademas de 
+usar Javascript se utiliza CSS y XML para las interfaces de usuario. Además, se puede utilizar TypeScript, Angular 2 y
+Vue.js.
+
+
+\subsection{Comparativa}
+
+\begin{table}[comparativa]
+	\centering
+	{\small
+		\input{tables/comparativaHibridas.tex}
+	}
+	\caption[Comparativa de IONIC, React Native, NativeScript]
+	{Comparativa de IONIC, React Native y NativeScript~\cite{comparativaHibridas}}
+	\label{tab:comparativa}
+\end{table}
 
 \section{Aplicaciones de la competencia}
 \subsection{Spigit}
