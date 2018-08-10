@@ -54,8 +54,8 @@ su trabajo. Dichos equipos tienen las siguientes características:
 \begin{itemize}
 	\item Son auto-organizados, nadie lidera al equipo.
 	\item Son multifuncionales, con las habilidades necesarias para llevar a cabo cada incremento del producto.
-	\item No hay titulos para ningún miembro independientemente del trabajo que realice.
-	\item No hay subequipos, tales como equipo de pruebas o arquitectura.
+	\item No hay títulos para ningún miembro independientemente del trabajo que realice.
+	\item No hay sub-equipos, tales como equipo de pruebas o arquitectura.
 	\item Cada miembro puede tener habilidades especializadas o centrarse más en un área pero la responsabilidad
 	del trabajo recae en todo el equipo.
 \end{itemize}
@@ -164,8 +164,37 @@ debe asegurarse que este tiempo no es sobrepasado. El propósito de este evento 
 
 \subsection{Artefactos}
 
+La función principal de todos los artefactos es garantizar la transparencia de información y mejorar 
+la capacidad de inspección y adaptación, además, cuantifican el trabajo.
+
+\subsubsection{Product Backlog}
+
+Los requisitos del producto se encuentran en la Product Backlog, una lista ordenada donde se encuentran 
+todos los requisitos conocidos pendientes de completarse. Es importante recalcar que solo son los 
+requisitos conocidos, pues a lo largo del proyecto estos pueden cambiar y añadirse nuevos, ya que no es 
+una lista completa.
+
+El responsable de modificar y ordenar esta lista es el Product Owner.
+
+La Product Backlog enumera todas las características, funcionalidades, requisitos, mejores y correcciones 
+que describen cambios en el producto para futuros Sprints. Sus elementos se componen de una descripción, 
+un numero de orden, una estimación del tiempo necesario para terminar la tarea y un valor. También pueden 
+incluir requisitos de aceptación o pruebas para comprobar que se han terminado correctamente.
+
+\subsubsection{Sprint Backlog}
+
+\subsubsection{Incremento}
+
+
 \subsection{Reglas}
 
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{./img/scum.png}
+		\caption{Reglas de Scrum}
+		\label{fig:scrum}
+	\end{center}
+\end{figure}
 
 \section{Herramientas}
 
@@ -177,7 +206,7 @@ Para la realización de este TFG se utilizará un ordenador, un móvil Androi
 necesario ha sido facilitado en su mayoría por Intelygenz.
 
 \begin{itemize}
-	\item MacBook Pro Procesador Intel Core i5 @2.5GHz. 8GB RAM 1600 MHz. macOS High Sierra v10.13.6
+	\item MacBook Pro Procesador Intel Core i5 @2.5GHz. 8GB RAM 1600 MHz. macOS High Sierra v10.13
 	\item Nexus 5x Procesador Qualcomm® Snapdragon™ 808 64 bits, 1.8 GHz, seis núcleos, 2GB RAM con Android 8.1
 	\item Nokia 7 Plus Procesador Qualcomm® Snapdragon™ 660 64 bits, 2,2 GHz, ocho núcleos, 4GB RAM con Android 9.0
 	\item iPhone 8 Procesador Apple A10 Fusion Quad-Core 64 bits, 2.23 GHz, 2GB RAM con IOS 11
@@ -187,7 +216,10 @@ necesario ha sido facilitado en su mayoría por Intelygenz.
 
  El software necesario para la realización del proyecto es el siguiente:
 \begin{itemize}
-	\item Android Studio~\cite{ASTUDIO}, para desarrollar la parte nativa de Android de la aplicación.
+	\item Android Studio~\cite{ASTUDIO}
+	
+	Para desarrollar la parte nativa de Android de la aplicación.
+	
 	\item ECMAScript~\cite{ECMA}~\cite{ECMABOOK}, es el lenguaje en el que se realiza el desarrollo.
 	\item Genymotion
 	\item GitHub
