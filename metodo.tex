@@ -37,9 +37,9 @@ esta gestión incluye:
 
 \begin{itemize}
 	\item Expresar de forma clara las historias de usuario.
-	\item Priorizar los elementos de la Product Backlog para alcanzar los objetivos.
-	\item Mantener la Product Backlog visible, transparente y clara, debe mostrar lo que el equipo hará a continuación.
-	\item Asegurar que el equipo entienda los elementos de la Product Backlog al nivel necesario.
+	\item Priorizar los elementos de la Pila del producto para alcanzar los objetivos.
+	\item Mantener la Pila del producto visible, transparente y clara, debe mostrar lo que el equipo hará a continuación.
+	\item Asegurar que el equipo entienda los elementos de la Pila del producto al nivel necesario.
 \end{itemize}
 
 \subsubsection{Equipo de desarrollo}
@@ -74,11 +74,11 @@ equipo.
 Algunas de las formas en las que el Scrum Master ayuda al Product Owner son las siguientes:
 \begin{itemize}
 	\item Asegura que el equipo de desarrolladores entienda los objetivos, el alcance y el dominio del producto.
-	\item Ayudar a gestionar la Product Backlog de manera efectiva.
-	\item Ayuda al Equipo Scrum a entender la necesidad de que los elementos la Product Backlog sean claros y 
+	\item Ayudar a gestionar la Pila del producto de manera efectiva.
+	\item Ayuda al Equipo Scrum a entender la necesidad de que los elementos la Pila del producto sean claros y 
 	concisos
 	\item Entender la planificación del producto
-	\item Asegurar que sepa como ordenar la Product Backlog
+	\item Asegurar que sepa como ordenar la Pila del producto
 	\item A ser ágil.
 	\item Facilitar que se realicen los eventos de Scrum
  \end{itemize}
@@ -137,8 +137,8 @@ posibles problemas con los que se hayan encontrado los desarrolladores.
 \subsubsection{Revisión del Sprint}
 
 Al terminar cada Sprint se realiza una reunión para evaluar el incremento del producto realizado y 
-adaptar la Product Backlog en caso de ser necesario. Basándose en esto y en cualquier otro cambio
-que se realice a la Product Backlog, se determinarán las siguientes cosas que se podrían realizar 
+adaptar la Pila del producto en caso de ser necesario. Basándose en esto y en cualquier otro cambio
+que se realice a la Pila del producto, se determinarán las siguientes cosas que se podrían realizar 
 para aumentar el valor al producto.
 
 Esta es una reunión informal y el principal objetivo es facilitar la retroalimentación de información y 
@@ -167,33 +167,44 @@ debe asegurarse que este tiempo no es sobrepasado. El propósito de este evento 
 La función principal de todos los artefactos es garantizar la transparencia de información y mejorar 
 la capacidad de inspección y adaptación, además, cuantifican el trabajo.
 
-\subsubsection{Product Backlog}
+\subsubsection{Pila del producto(Product Backlog)}
 
-Los requisitos del producto se encuentran en la Product Backlog, una lista ordenada donde se encuentran 
+Los requisitos del producto se encuentran en la Pila del producto, una lista ordenada donde se encuentran 
 todos los requisitos conocidos pendientes de completarse. Es importante recalcar que solo son los 
 requisitos conocidos, pues a lo largo del proyecto estos pueden cambiar y añadirse nuevos, ya que no es 
 una lista completa.
 
 El responsable de modificar y ordenar esta lista es el Product Owner.
 
-La Product Backlog enumera todas las características, funcionalidades, requisitos, mejores y correcciones 
+La Pila del producto enumera todas las características, funcionalidades, requisitos, mejores y correcciones 
 que describen cambios en el producto para futuros Sprints. Sus elementos se componen de una descripción, 
 un numero de orden, una estimación del tiempo necesario para terminar la tarea y un valor. También pueden 
 incluir requisitos de aceptación o pruebas para comprobar que se han terminado correctamente.
 
-\subsubsection{Sprint Backlog}
+\subsubsection{Pila del Sprint(Sprint Backlog)}
 
+Es una selección de tareas de la pila del producto que se estima que se realizarán durante el Sprint y que se 
+entregarán en el Incremento al final del Sprint. Debe tener un nivel de detalle suficiente para que se 
+pueda entender el progreso en las reuniones diarias. Esta pila puede ser modificada a lo largo del Sprint 
+por el equipo de desarrollo conforme trabajan y aprendan mas acerca del trabajo necesario.
 
+Cuando se requiera nuevo trabajo se añade a la pila del Sprint y conforme se va completando el trabajo 
+planificado se va actualizando el tiempo restante estimado para terminar el trabajo pendiente en la Pila 
+del Sprint. Igualmente, si algún elemento del plan se considera innecesario se eliminará.
 
 \subsubsection{Incremento}
 
-
+El incremento es la suma de todos los elementos de la Pila del Producto completados durante el Sprint, ademas
+de los completados durante Sprints anteriores. Al final de cada Sprint el Incremento debe poder ser puesto en 
+producción, independientemente de si el Product Owner desea hacerlo o no.
 
 \subsection{Reglas}
 
+En la figura~\ref{fig:scrum} se puede apreciar un esquema que resume las reglas y el funcionamiento de Scrum.
+
 \begin{figure}[!h]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{./img/scrum.png}
+		\includegraphics[width=1.2\textwidth]{./img/scrum.png}
 		\caption{Reglas de Scrum}
 		\label{fig:scrum}
 	\end{center}
@@ -223,20 +234,53 @@ necesario ha sido facilitado en su mayoría por Intelygenz.
 	
 	Para desarrollar la parte nativa de Android de la aplicación.
 	
-	\item ECMAScript~\cite{ECMA}~\cite{ECMABOOK}, es el lenguaje en el que se realiza el desarrollo.
+	\item ECMAScript~\cite{ECMA}~\cite{ECMABOOK}
+	
+	Es el lenguaje en el que se realiza el desarrollo.
+	
 	\item Genymotion
+	
+	
 	\item GitHub
+	
+	
 	\item GitKraken
+	
+	
 	\item GitLab Community Edition
+	
+	
 	\item Invision
-	\item IntelliJ IDEA Community~\cite{IDEA}, para desarrollar la mayor parte de la aplicación.
-	\item Native Base~\cite{NABA}, se utilizará para realizar el estilo visual de la aplicación.
-	\item React Native~\cite{RENA}~\cite{REACTBOOK}, es el framework que se usa para realizar el desarrollo.
-	\item Redux~\cite{REDUX}, para desacoplar el estado global en React Native utilizando el patrón Flux.
+	
+	
+	\item IntelliJ IDEA Community~\cite{IDEA}
+	
+	Para desarrollar la mayor parte de la aplicación.
+	
+	\item Native Base~\cite{NABA}
+	
+	Se utilizará para realizar el estilo visual de la aplicación.
+	
+	\item React Native~\cite{RENA}~\cite{REACTBOOK}
+	
+	Es el framework que se usa para realizar el desarrollo.
+	
+	\item Redux~\cite{REDUX}
+	
+	Para desacoplar el estado global en React Native utilizando el patrón Flux.
+	
 	\item Slack
+	
+	
 	\item TeXstudio
+	
+	
 	\item Travis
-	\item Xcode~\cite{XCODE}, para desarrollar la parte nativa de IOS de la aplicación.
+	
+	
+	\item Xcode~\cite{XCODE}
+	
+	Para desarrollar la parte nativa de IOS de la aplicación.
 \end{itemize}
 
 % Local Variables:
