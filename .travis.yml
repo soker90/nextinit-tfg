@@ -8,10 +8,10 @@ before_install:
 - export TZ=Europe/Madrid
 script:
 - make
-- export NAME=tfg_v1.0.$(($TRAVIS_BUILD_NUMBER-193))pre-$(date +'%Y%m%d%H%M%S').pdf
+- export NAME=tfg_v1.1.$(($TRAVIS_BUILD_NUMBER-353))pre-$(date +'%Y%m%d%H%M%S').pdf
 - mv main.pdf $NAME
 before_deploy:
-- git tag "v1.0.$(($TRAVIS_BUILD_NUMBER-193))pre-$(date +'%Y%m%d%H%M%S')"
+- git tag "v1.1.$(($TRAVIS_BUILD_NUMBER-353))pre-$(date +'%Y%m%d%H%M%S')"
 deploy:
   provider: releases
   api_key:
