@@ -117,13 +117,21 @@ como se planificó.
 \subsection{Sprint 1}
 
 Los objetivos de este sprint era hacer un inicio de sesión que pudiera comprobar los credenciales de los
-usuarios en el servidor de autenticación de los empleados de Viesgo que funcionaba con (Microsoft...).
+usuarios en el servidor de autenticación de los empleados de Viesgo que funcionaba con~\acf{ADFS}de Microsoft.
 
-Al final del sprint no se hizo y se hizo el de multidominio
+Se intentó validar unos credenciales de prueba siguiendo diversos manuales de Microsoft, además de 
+diversas librerías que facilitaban la autenticación en React Native. Finalmente, no se pudo hacer funcionar
+ este inicio de sesión puesto que el servicio de autenticación de Viesgo presentaba serios problemas de
+ estabilidad y funcionamiento. Por lo que se tomó la decisión, de no incluir este inicio de sesión en las 
+ primeras versiones hasta que Viesgo solventara sus problemas, algo que tardaría varios meses.
+
+Al no poder realizar el inicio de sesión con los usuarios de Viesgo, se centraron los esfuerzos en realizar
+la autenticación con los servidores de nextinit y conseguir que un usuario pudiera iniciar sesión con su 
+usuario y contraseña y seleccionar el nextinit al que quería entrar de entre los que tuviera el usuario.
 
 \subsection{Sprint 2}
 
-En desarrollo...
+
 
 \subsection{Sprint 3}
 
