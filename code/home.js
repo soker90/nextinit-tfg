@@ -38,15 +38,10 @@ export const DiscoverStackNavigator = createStackNavigator({
             }
         })},
     create_idea: {
-        screen: CreateIdeaPage,
-        navigationOptions: ({navigation}) => ({
-            headerLeft: backIcon(navigation)
-        })},
+       [...]
+    },
     create_idea_preview: {
-        screen: CreateIdeaPreviewPage,
-        navigationOptions: ({navigation}) => ({
-            headerLeft: backIcon(navigation)
-        })
+        [...]
     },
 }, {
     headerMode: 'float',
