@@ -136,14 +136,18 @@ Durante el segundo Sprint se realizó la pantalla principal, en la que mostraba 
 información básica de las ideas publicadas en el Nextinit. En esta lista se mostraban las ideas públicas y 
 en caso de ser un administrador, también las privadas.
 
-También se realizó el sistema de navegación de la aplicación utilizando la librería -------, que permitia gestionar 
+También se realizó el sistema de navegación de la aplicación utilizando la librería -------, que permite gestionar 
 la navegación disparando acciones al igual que funcionaba el resto de la aplicación con redux. Se realizaron dos 
-pilas de navegación independientes, una con las pantallas de la aplicación cuando el usuario no ha iniciado 
-sesión y otra pila con las pantalla una vez uniciada sesión. A su vez se creaba una nueva pila por cada grupo de pantallas,
+pilas de navegación independientes(ver Listado~\ref{code:navigation}), una con las pantallas de la aplicación cuando el usuario no ha iniciado 
+sesión y otra pila con las pantalla una vez iniciada sesión(ver Listado~\ref{code:login}). A su vez se creaba una nueva pila por cada grupo de pantallas(ver Listado~\ref{code:home}),
 que entre otras cosas facilitaba la navegación entre ellas.
 
+\lstinputlisting[float=ht, language=Javascript, caption = {Stack principal de navegación}, label = code:navigation ]{code/navigation.js}
+\lstinputlisting[float=ht, language=Javascript, caption = {Stack con las sesión iniciada}, label = code:login ]{code/login.js}
+\lstinputlisting[float=ht, language=Javascript, caption = {Stack principal, para la gestión de ideas}, label = code:home ]{code/home.js}
+
 La mayor dificultad de este Sprint fue como en la mayoría, adaptarse al diseño dado por el diseñador. Hubo grandes problemas
-para usar una imagen de fondo en toda la aplicación, incluida en la cabecera y que fueram totalmente transparente.
+para usar una imagen de fondo en toda la aplicación, incluida en la cabecera y que fueran totalmente transparente.
 
 Los objetivos de este sprint
 
