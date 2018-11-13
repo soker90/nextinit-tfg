@@ -116,7 +116,7 @@ como se planificó.
 
 \subsection{Sprint 1}
 
-Los objetivos de este sprint era hacer un inicio de sesión que pudiera comprobar los credenciales de los
+Los objetivos de este sprint era hacer mejorar el inicio de sesión para que pudiera comprobar los credenciales de los
 usuarios en el servidor de autenticación de los empleados de Viesgo que funcionaba con~\acf{ADFS}de Microsoft.
 
 Se intentó validar unos credenciales de prueba siguiendo diversos manuales de Microsoft, además de 
@@ -136,7 +136,7 @@ Durante el segundo Sprint se realizó la pantalla principal, en la que mostraba 
 información básica de las ideas publicadas en el Nextinit. En esta lista se mostraban las ideas públicas y 
 en caso de ser un administrador, también las privadas.
 
-También se realizó el sistema de navegación de la aplicación utilizando la librería -------, que permite gestionar 
+También se realizó el sistema de navegación de la aplicación utilizando la librería React Navigation, que permite gestionar 
 la navegación disparando acciones al igual que funcionaba el resto de la aplicación con redux. Se realizaron dos 
 pilas de navegación independientes(ver Listado~\ref{code:navigation}), una con las pantallas de la aplicación cuando el usuario no ha iniciado 
 sesión y otra pila con las pantalla una vez iniciada sesión(ver Listado~\ref{code:login}). A su vez se creaba una nueva pila por cada grupo de pantallas(ver Listado~\ref{code:home}),
@@ -149,25 +149,55 @@ que entre otras cosas facilitaba la navegación entre ellas.
 La mayor dificultad de este Sprint fue como en la mayoría, adaptarse al diseño dado por el diseñador. Hubo grandes problemas
 para usar una imagen de fondo en toda la aplicación, incluida en la cabecera y que fueran totalmente transparente.
 
-Los objetivos de este sprint
-
 \subsection{Sprint 3}
+
+Se creó una pantalla para ver los detalles principales de la idea seleccionada, en el siguiente sprint se añadiría el resto de pantallas 
+para ver los demás detalles de la idea.
 
 Durante este sprint se utilizó el desarrollo de la página de inicio para crear un componente que mostra una serie de ideas dadas. Se 
 realizó con este componente la pantalla de mis ideas, que mostraba todas las ideas publicadas por el usuario, las publicas, las privadas y
 los borradores de ideas sin publicar.
 
-Además se realizó las pantallas de crear nuevas ideas, algunas de las secciones son opcionales y solo se mostraran si están activadas en 
-el nextinit, además algunos elementos como los objetivos son los introducidos por la organización. Para crear la idea es necesario seleccionar 
-una imagen de la idea, que puede ser seleccionada desde la galería o realizada con la cámara del dispositivo.
+Además se comenzó, algunas de las secciones son opcionales y solo se mostraran si están activadas en 
+el nextinit, además algunos elementos como los objetivos son los introducidos por la organización. 
+
+Para crear la idea es necesario seleccionar una imagen de la idea, que puede ser seleccionada desde la galería o realizada con la cámara 
+del dispositivo.
+
+No se pudo completar la creación de las ideas como estaba planificado, por lo que se concluyó en el sprint siguiente.
 
 \subsection{Sprint 4}
 
-Terminar crear ide y editar idea se le añaden los dessafios a la pagina de inicio
+En este sprint se añadieron dos nuevas pestañas a la pantalla de ver la idea. Una de ellas es para ver y escribir comentarios de la idea, 
+en la que también se puede contestar a comentarios previos. Y la otra pantalla es para ver las personas involucradas en la idea, entre 
+las que se encuentran iversores, creadores de la idea, colaboradores que se han ofrecido ayudar para llevar a cabo la idea y el equipo 
+que llevará a cabo el piloto de la idea.
+
+Se terminó la creación de la idea, una vez creada ésta se guardaba como borrador. Posteriormente se mostraba una vista previa de 
+como se vería la idea una vez publicada.
+
+También se desarrollo la pantalla,anteriormente mencionada, que muestra la vista previa de la idea. Se refactorizó el código creado 
+para la pantalla principal de ver idea, y se creó un componente reutilizable para la pestaña principal de ver idea y para la vista previa. En 
+esta vista previa solo se muestran los detalles principales de la idea, no se muestra ni las personas involucradas en la idea ni los 
+comentarios.
+
+La mayor complejidad de este sprint fue el desarrollo de un carrusel que muestra los desafíos en la pantalla principal. El carrusel muestra una imágen del desafío, 
+el título y las ideas que creadas para él.
 
 \subsection{Sprint 5}
 
-Notificaciones y desafíos
+En este último sprint se trabajó principalmente en perfeccionar la aplicación y pulir pequeñas imperfecciones estéticas. 
+
+Además utilizando el componente anteriormente refactorizado se creó la pantalla de ver desafío, con dos pestañas. Una con dicho compenente 
+para mostrar la información principal del desafío. Y otra usando el componente anteriormente creado que mostraba una lista de ideas, para 
+mostrar una lista de las ideas del desafío.
+
+También se creó una pantalla de notificaciones con tres pestañas. En una de ellas de mostraba las notificaciones del usuario, si se ha invertido en una idea suya, si se la han comentado, si ha ganado dinero.. En otra de ellas se mostraba toda la actividad del 
+nextinit, si se ha publicado nuevas ideas, si alguien ha comentado, etc. Y en la restante se muestra la información de las pestañas 
+antesriores junta.
+
+Por último, se creó una pantalla que muestra un perfil básico de usuario. Con una pestaña en la que se puede observar algúnas estaditicas básicas del usuario y con otra pestaña en la que se puede ver la actidad del usuario en el nextinit.
+
 
 % Local Variables:
 %  coding: utf-8
